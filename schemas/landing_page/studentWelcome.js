@@ -39,6 +39,13 @@ export default {
         }
       ],
       validation: Rule => Rule.required()
+    },
+    {
+      name: 'prospectis',
+      title: 'Prospectus',
+      description: `The PDF file that visitors should be given when they click on the 'Prospectus' button.`,
+      type: 'file',
+      validation: Rule => Rule.required()
     }
   ]
 }

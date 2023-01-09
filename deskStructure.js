@@ -64,6 +64,9 @@ S.list()
                 .title(`Learning Support`)
                 .child(S.document().schemaType('section').documentId('learningSupportSection')),
               S.listItem()
+                .title(`School Structure`)
+                .child(S.document().schemaType('section').documentId('schoolStructureSection')),
+              S.listItem()
                 .title(`Sporting`)
                 .child(S.document().schemaType('section').documentId('sportingSection')),
               S.listItem()
