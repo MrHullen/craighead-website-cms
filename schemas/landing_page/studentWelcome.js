@@ -8,7 +8,7 @@ export default {
       type: 'string',
       hidden: true,
       readOnly: true,
-      initialValue: `Students' Welcome`
+      initialValue: `Students' Welcome`,
     },
     {
       name: 'blurb',
@@ -16,7 +16,7 @@ export default {
       description: 'The welcome text - the very first thing visitors see.',
       type: 'array',
       of: [{type: 'block'}],
-      validation: Rule => Rule.required()
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'image',
@@ -28,24 +28,26 @@ export default {
           name: 'caption',
           type: 'string',
           title: 'Caption',
-          description: 'The text that will display on the image. Should be a short description, e.g. Alysha and Zara, student leaders.',
-          validation: Rule => Rule.required()
+          description:
+            'The text that will display on the image. Should be a short description, e.g. Alysha and Zara, student leaders.',
+          validation: (Rule) => Rule.required(),
         },
         {
           name: 'alt',
           type: 'string',
           title: 'Alternative text',
-          description: 'The text that will display is the visitor has images turned off or there is a problem with the image file. Should be a short description, e.g. Alysha and Zara, student leaders.'
-        }
+          description:
+            'The text that will display is the visitor has images turned off or there is a problem with the image file. Should be a short description, e.g. Alysha and Zara, student leaders.',
+        },
       ],
-      validation: Rule => Rule.required()
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'prospectis',
       title: 'Prospectus',
       description: `The PDF file that visitors should be given when they click on the 'Prospectus' button.`,
       type: 'file',
-      validation: Rule => Rule.required()
-    }
-  ]
+      validation: (Rule) => Rule.required(),
+    },
+  ],
 }

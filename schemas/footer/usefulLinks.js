@@ -8,23 +8,24 @@ export default {
       type: 'string',
       hidden: true,
       readOnly: true,
-      initialValue: 'Useful Links'
+      initialValue: 'Useful Links',
     },
     {
       name: 'usefulLinks',
       title: 'Useful links',
-      description: 'The list of links that visitors might be interested in, e.g. School Policy Documents, CraigNet, KAMAR, etc.',
+      description:
+        'The list of links that visitors might be interested in, e.g. School Policy Documents, CraigNet, KAMAR, etc.',
       type: 'array',
       of: [
         {
-          type: "object",
-          name: "usefulLink",
+          type: 'object',
+          name: 'usefulLink',
           fields: [
-            { type: "string", name: "title" },
-            { type: "url", name: "link" }
-          ]
-        }
-      ]
-    }
-  ]
+            {type: 'string', name: 'title'},
+            {type: 'url', name: 'link'},
+          ],
+        },
+      ],
+    },
+  ],
 }

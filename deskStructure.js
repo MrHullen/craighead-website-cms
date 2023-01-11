@@ -1,8 +1,8 @@
 export const myStructure = (S) =>
-S.list()
-  .title('Base')
-  .items([
-    S.listItem()
+  S.list()
+    .title('Base')
+    .items([
+      S.listItem()
         .title('Landing Page')
         .child(
           S.list()
@@ -16,16 +16,22 @@ S.list()
                 .child(S.document().schemaType('studentWelcome').documentId('studentWelcome')),
               S.listItem()
                 .title(`Principal's Welcome`)
-                .child(S.document().schemaType('principalsWelcome').documentId('principalsWelcome')),
+                .child(
+                  S.document().schemaType('principalsWelcome').documentId('principalsWelcome')
+                ),
               S.listItem()
                 .title(`Student Spotlights`)
-                .child(S.document().schemaType('studentSpotlights').documentId('studentSpotlights')),
+                .child(
+                  S.document().schemaType('studentSpotlights').documentId('studentSpotlights')
+                ),
               S.listItem()
                 .title(`Academic Performance`)
-                .child(S.document().schemaType('academicPerformance').documentId('academicPerformance')),
+                .child(
+                  S.document().schemaType('academicPerformance').documentId('academicPerformance')
+                ),
             ])
         ),
-    S.listItem()
+      S.listItem()
         .title('Enrolment')
         .child(
           S.list()
@@ -45,7 +51,7 @@ S.list()
                 .child(S.document().schemaType('section').documentId('internationalSection')),
             ])
         ),
-    S.listItem()
+      S.listItem()
         .title('Our School')
         .child(
           S.list()
@@ -77,7 +83,7 @@ S.list()
                 .child(S.document().schemaType('section').documentId('facilitiesHireSection')),
             ])
         ),
-    S.listItem()
+      S.listItem()
         .title('About Us')
         .child(
           S.list()
@@ -106,10 +112,10 @@ S.list()
                 .child(S.document().schemaType('section').documentId('historySection')),
             ])
         ),
-    S.listItem()
-      .title('Footer')
-      .child(
-        S.list()
+      S.listItem()
+        .title('Footer')
+        .child(
+          S.list()
             // Sets a title for our new list
             .title(`Footer sections`)
             // Add items to the array
@@ -122,9 +128,21 @@ S.list()
                 .title(`Useful Links`)
                 .child(S.document().schemaType('usefulLinks').documentId('usefulLinks')),
             ])
+        ),
+      S.listItem().title('General').child(S.document().schemaType('general').documentId('general')),
+      // We also need to remove the new singletons from the main list
+      ...S.documentTypeListItems().filter(
+        (listItem) =>
+          ![
+            'studentWelcome',
+            'principalsWelcome',
+            'studentSpotlights',
+            'academicPerformance',
+            'header',
+            'section',
+            'address',
+            'usefulLinks',
+            'general',
+          ].includes(listItem.getId())
       ),
-    // We also need to remove the new singletons from the main list
-    ...S.documentTypeListItems().filter(
-      (listItem) => !['studentWelcome', 'principalsWelcome', 'studentSpotlights', 'academicPerformance', 'header', 'section', 'address', 'usefulLinks'].includes(listItem.getId())
-    ),
-])
+    ])

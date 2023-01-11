@@ -8,22 +8,23 @@ export default {
       type: 'string',
       hidden: true,
       readOnly: true,
-      initialValue: `Principal's Quote`
+      initialValue: `Principal's Quote`,
     },
     {
       name: 'quote',
       title: 'Quote',
-      description: 'The text that will display next to to (or below on mobile) the image of the Principal.',
+      description:
+        'The text that will display next to to (or below on mobile) the image of the Principal.',
       type: 'array',
-      of: [{ type: 'block' } ],
-      validation: Rule => Rule.required()
+      of: [{type: 'block'}],
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'principal',
       type: 'string',
       title: 'Principal',
       description: `The Principal's name, e.g. Lindy Graham`,
-      validation: Rule => Rule.required()
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'image',
@@ -35,10 +36,11 @@ export default {
           name: 'alt',
           type: 'string',
           title: 'Alternative text',
-          description: 'The text that will display is the visitor has images turned off or there is a problem with the image file. Should be a short description, e.g. Lindy standing with student leaders.',
-        }
+          description:
+            'The text that will display is the visitor has images turned off or there is a problem with the image file. Should be a short description, e.g. Lindy standing with student leaders.',
+        },
       ],
-      validation: Rule => Rule.required()
-    }
-  ]
+      validation: (Rule) => Rule.required(),
+    },
+  ],
 }
