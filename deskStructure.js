@@ -44,6 +44,9 @@ export const myStructure = (S) =>
                 .title(`Header`)
                 .child(S.document().schemaType('header').documentId('enrolmentHeader')),
               S.listItem()
+                .title(`Girls`)
+                .child(S.document().schemaType('section').documentId('girlsSection')),
+              S.listItem()
                 .title(`Domestic`)
                 .child(S.document().schemaType('section').documentId('domesticSection')),
               S.listItem()
@@ -63,24 +66,24 @@ export const myStructure = (S) =>
               S.listItem()
                 .title(`Header`)
                 .child(S.document().schemaType('header').documentId('ourSchoolHeader')),
-              S.listItem()
-                .title(`Academic Performance`)
-                .child(S.document().schemaType('section').documentId('academicPerformanceSection')),
-              S.listItem()
-                .title(`Learning Support`)
-                .child(S.document().schemaType('section').documentId('learningSupportSection')),
+              // S.listItem()
+              //   .title(`Academic Performance`)
+              //   .child(S.document().schemaType('section').documentId('academicPerformanceSection')),
               S.listItem()
                 .title(`School Structure`)
                 .child(S.document().schemaType('section').documentId('schoolStructureSection')),
+              S.listItem()
+                .title(`Boarding`)
+                .child(S.document().schemaType('section').documentId('boardingSection')),
+              S.listItem()
+                .title(`Learning Support`)
+                .child(S.document().schemaType('section').documentId('learningSupportSection')),
               S.listItem()
                 .title(`Sporting`)
                 .child(S.document().schemaType('section').documentId('sportingSection')),
               S.listItem()
                 .title(`Cultural`)
                 .child(S.document().schemaType('section').documentId('culturalSection')),
-              S.listItem()
-                .title(`Facilities Hire`)
-                .child(S.document().schemaType('section').documentId('facilitiesHireSection')),
             ])
         ),
       S.listItem()
@@ -99,17 +102,14 @@ export const myStructure = (S) =>
                 .title(`Special Character`)
                 .child(S.document().schemaType('section').documentId('specialCharacterSection')),
               S.listItem()
-                .title(`Boarding`)
-                .child(S.document().schemaType('section').documentId('boardingSection')),
-              S.listItem()
-                .title(`Girls`)
-                .child(S.document().schemaType('section').documentId('girlsSection')),
-              S.listItem()
                 .title(`Old Girls`)
                 .child(S.document().schemaType('section').documentId('oldGirlsSection')),
               S.listItem()
                 .title(`History`)
                 .child(S.document().schemaType('section').documentId('historySection')),
+              S.listItem()
+                .title(`Facilities Hire`)
+                .child(S.document().schemaType('section').documentId('facilitiesHireSection')),
             ])
         ),
       S.listItem()

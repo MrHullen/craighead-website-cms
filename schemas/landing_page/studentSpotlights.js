@@ -14,11 +14,15 @@ export default {
       name: 'studentSpotlights',
       title: 'Student Spotlights',
       description:
-        'The list of links that visitors might be interested in, e.g. School Policy Documents, CraigNet, KAMAR, etc.',
+        'The set of photos and captions that highlight individual student experiences in the school. Captions should be short and generalised.',
       type: 'array',
       of: [
         {
           type: 'image',
+          options: {
+            hotspot: true,
+          },
+          storeOriginalFilename: false,
           fields: [
             {
               name: 'caption',

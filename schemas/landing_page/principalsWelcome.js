@@ -29,8 +29,12 @@ export default {
     {
       name: 'image',
       title: 'Photo',
-      description: `The photo of the student leaders. This must be a square photo to display properly. Recommended size is at least 1024x1024 pixels.`,
+      description: `The photo of the student leaders. Recommended size is at least 1024x1024 pixels.`,
       type: 'image',
+      options: {
+        hotspot: true,
+      },
+      storeOriginalFilename: false,
       fields: [
         {
           name: 'alt',

@@ -15,13 +15,15 @@ export default {
       title: 'Favicon',
       description: `The image shown on the tab in the visitor's browser.`,
       type: 'image',
+      storeOriginalFilename: false,
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'logo',
       title: 'Logo Image',
-      description: `The logo in the top right of the navbar.`,
+      description: `The logo in the top left of the navbar. Should be as large as possible with a transparent background.`,
       type: 'image',
+      storeOriginalFilename: false,
       validation: (Rule) => Rule.required(),
     },
     {
@@ -29,6 +31,7 @@ export default {
       title: 'Background Image',
       description: `The image shown behind the content on the page.`,
       type: 'image',
+      storeOriginalFilename: false,
       validation: (Rule) => Rule.required(),
     },
     {

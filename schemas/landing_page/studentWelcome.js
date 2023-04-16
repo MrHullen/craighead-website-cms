@@ -21,8 +21,12 @@ export default {
     {
       name: 'image',
       title: 'Photo',
-      description: `The photo of the student leaders. This must be a square photo to display properly. Recommended size is at least 1024x1024 pixels.`,
+      description: `The photo of the student leaders. This should be a square photo to display properly, but you can use the hotspotting tool to choose the middle instead. Recommended size is at least 1024x1024 pixels.`,
       type: 'image',
+      options: {
+        hotspot: true,
+      },
+      storeOriginalFilename: false,
       fields: [
         {
           name: 'caption',
@@ -42,12 +46,12 @@ export default {
       ],
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'prospectis',
-      title: 'Prospectus',
-      description: `The PDF file that visitors should be given when they click on the 'Prospectus' button.`,
-      type: 'file',
-      validation: (Rule) => Rule.required(),
-    },
+    // {
+    //   name: 'prospectis',
+    //   title: 'Prospectus',
+    //   description: `The PDF file that visitors should be given when they click on the 'Prospectus' button.`,
+    //   type: 'file',
+    //   validation: (Rule) => Rule.required(),
+    // },
   ],
 }

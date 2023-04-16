@@ -21,6 +21,7 @@ export default {
       of: [
         {
           type: 'image',
+          storeOriginalFilename: false,
           fields: [
             {
               name: 'caption',

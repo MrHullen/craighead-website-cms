@@ -10,12 +10,5 @@ export default {
       readOnly: true,
       initialValue: 'Academic Performance',
     },
-    {
-      name: 'studentSpotlights',
-      title: 'Student Spotlights',
-      description:
-        'The list of links that visitors might be interested in, e.g. School Policy Documents, CraigNet, KAMAR, etc.',
-      type: 'string',
-    },
   ],
 }
