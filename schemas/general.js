@@ -34,12 +34,12 @@ export default {
       storeOriginalFilename: false,
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'application',
-      title: 'Application Form',
-      description: `The PDF file that visitors should be given when they click on the 'Apply Now' button.`,
-      type: 'file',
-      validation: (Rule) => Rule.required(),
-    },
+    // {
+    //   name: 'application',
+    //   title: 'Application Form',
+    //   description: `The PDF file that visitors should be given when they click on the 'Apply Now' button.`,
+    //   type: 'file',
+    //   validation: (Rule) => Rule.required(),
+    // },
   ],
 }
