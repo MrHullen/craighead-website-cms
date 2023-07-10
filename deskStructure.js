@@ -73,6 +73,9 @@ export const myStructure = (S) =>
                 .title(`School Structure`)
                 .child(S.document().schemaType('section').documentId('schoolStructureSection')),
               S.listItem()
+                .title(`Our People`)
+                .child(S.document().schemaType('section').documentId('ourPeopleSection')),
+              S.listItem()
                 .title(`Boarding`)
                 .child(S.document().schemaType('section').documentId('boardingSection')),
               S.listItem()
