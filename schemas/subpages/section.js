@@ -9,6 +9,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'Paragraphs',
+      title: 'Paragraphs',
+      type: 'array',
+      of: [{type: 'paragraph'}],
+    },
+    {
       name: 'text',
       title: 'Text',
       type: 'array',

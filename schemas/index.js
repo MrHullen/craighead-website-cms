@@ -7,6 +7,10 @@ import section from './subpages/section'
 import address from './footer/address'
 import usefulLinks from './footer/usefulLinks'
 import general from './general'
+import article from './newsletter/article'
+import newsletter from './newsletter/newsletter'
+import blockContent from './blockContent'
+import paragraph from './subpages/paragraph'
 
 export const schemaTypes = [
   studentWelcome,
@@ -18,4 +22,8 @@ export const schemaTypes = [
   address,
   usefulLinks,
   general,
+  newsletter,
+  article,
+  blockContent,
+  paragraph,
 ]

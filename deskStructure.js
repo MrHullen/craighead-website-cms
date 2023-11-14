@@ -146,6 +146,8 @@ export const myStructure = (S) =>
             'address',
             'usefulLinks',
             'general',
+            'article',
+            'paragraph',
           ].includes(listItem.getId())
       ),
     ])
