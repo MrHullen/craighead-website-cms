@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 import slugify from 'slugify'
 
 async function myAsyncSlugifier(input, schemaType, context) {

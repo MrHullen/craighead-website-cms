@@ -11,6 +11,14 @@ import article from './newsletter/article'
 import newsletter from './newsletter/newsletter'
 import blockContent from './blockContent'
 import paragraph from './subpages/paragraph'
+import video from './video'
+import tileImages from './tileImages'
+import page from './page/page'
+import pageHeader from './page/pageHeader'
+import pageSection from './page/pageSection'
+import pageParagraph from './page/pageParagraph'
+import pageTile from './page/pageTile'
+
 
 export const schemaTypes = [
   studentWelcome,
@@ -26,4 +34,11 @@ export const schemaTypes = [
   article,
   blockContent,
   paragraph,
+  video,
+  tileImages,
+  page,
+  pageHeader,
+  pageSection,
+  pageParagraph,
+  pageTile,
 ]

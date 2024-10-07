@@ -1,6 +1,6 @@
 export const myStructure = (S) =>
   S.list()
-    .title('Base')
+    .title('Craighead Diocesan School')
     .items([
       S.listItem()
         .title('Landing Page')
@@ -11,6 +11,13 @@ export const myStructure = (S) =>
             // Add items to the array
             // Each will pull one of our new singletons
             .items([
+              S.listItem()
+                .title(`Landing Video`)
+                .child(S.document().schemaType('video').documentId('video')),
+              S.listItem()
+                .title(`Tile Images`)
+                .child(S.document().schemaType('tileImages').documentId('tileImages')),
+
               S.listItem()
                 .title(`Students' Welcome`)
                 .child(S.document().schemaType('studentWelcome').documentId('studentWelcome')),
@@ -31,6 +38,7 @@ export const myStructure = (S) =>
                 ),
             ])
         ),
+      S.divider(),
       S.listItem()
         .title('Enrolment')
         .child(
@@ -116,6 +124,12 @@ export const myStructure = (S) =>
             ])
         ),
       S.listItem()
+        .title('Pages')
+        .child(
+          S.documentTypeList('page').title('Pages')
+        ),
+      S.divider(),
+      S.listItem()
         .title('Footer')
         .child(
           S.list()
@@ -148,6 +162,13 @@ export const myStructure = (S) =>
             'general',
             'article',
             'paragraph',
+            'tileImages',
+            'video',
+            'page',
+            'pageHeader',
+            'pageSection',
+            'pageParagraph',
+            'pageTile',
           ].includes(listItem.getId())
       ),
     ])
