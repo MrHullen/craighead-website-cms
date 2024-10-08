@@ -15,12 +15,14 @@ export default defineType({
     defineField({
       name: 'paragraphs',
       title: 'Paragraphs',
+      description: 'Use the Image button to add an image to the paragraph. It will appear beside the next paragraph in the editor.',
       type: 'pageParagraph',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'tiles',
       title: 'Tiles',
+      description: "These will display in a row under the paragraphs with a heading 'Learn more'. Recommend using either 0 or 3 tiles.",
       type: 'array',
       of: [{type: 'pageTile'}],
     }),

@@ -16,6 +16,7 @@ export default defineType({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+      description: 'This will be the URL for the page (i.e. craighead.school.nz/slug) so it must be unique. Use the generate button and adjust if there is a uniqueness warning.',
       validation: (Rule) => Rule.required(),
       options: {
         source: 'title',
@@ -23,12 +24,13 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'intro',
+      name: 'introduction',
       title: 'Introduction',
       description:
         'The text shown at the top of the page to introduce the visitor to what the page is about in general.',
-      type: 'array',
-      of: [{type: 'block'}],
+      type: 'string',
+      // type: 'array',
+      // of: [{type: 'block'}],
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -42,6 +44,7 @@ export default defineType({
     defineField({
       name: 'pageSections',
       title: 'Page Sections',
+      description: 'Each section will be shown on the page, one after another. Each section must have a heading, paragraphs, and a banner image. Optionally, you can add tiles.',
       type: 'array',
       of: [{type: 'pageSection'}],
     }),
