@@ -29,7 +29,7 @@ export default defineType({
     defineField({
       name: 'bannerImage',
       title: 'Banner Image',
-      description: `The image shown at the bottom of the section.`,
+      description: `The image shown at the bottom of the section. This is optional but highly recommended for every section except the last one.`,
       type: 'image',
       storeOriginalFilename: false,
     })

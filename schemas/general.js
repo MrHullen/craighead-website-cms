@@ -26,14 +26,14 @@ export default {
       storeOriginalFilename: false,
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'backgroundImage',
-      title: 'Background Image',
-      description: `The image shown behind the content on the page.`,
-      type: 'image',
-      storeOriginalFilename: false,
-      validation: (Rule) => Rule.required(),
-    },
+    // {
+    //   name: 'backgroundImage',
+    //   title: 'Background Image',
+    //   description: `The image shown behind the content on the page.`,
+    //   type: 'image',
+    //   storeOriginalFilename: false,
+    //   validation: (Rule) => Rule.required(),
+    // },
     // {
     //   name: 'application',
     //   title: 'Application Form',

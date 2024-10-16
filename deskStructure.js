@@ -2,6 +2,12 @@ export const myStructure = (S) =>
   S.list()
     .title('Craighead Diocesan School')
     .items([
+      S.listItem().title('General').child(S.document().schemaType('general').documentId('general')),
+      S.listItem()
+        .title(`Nav Bar`)
+        .child(
+          S.document().schemaType('navBar').documentId('91e6df21-7009-4e3f-9ffe-926d166d2ea0')
+        ),
       S.listItem()
         .title('Landing Page')
         .child(
@@ -146,7 +152,6 @@ export const myStructure = (S) =>
                 .child(S.document().schemaType('usefulLinks').documentId('usefulLinks')),
             ])
         ),
-      S.listItem().title('General').child(S.document().schemaType('general').documentId('general')),
       // We also need to remove the new singletons from the main list
       ...S.documentTypeListItems().filter(
         (listItem) =>
@@ -169,6 +174,9 @@ export const myStructure = (S) =>
             'pageSection',
             'pageParagraph',
             'pageTile',
+            'navBar',
+            'navMenu',
+            'navItem',
           ].includes(listItem.getId())
       ),
     ])
