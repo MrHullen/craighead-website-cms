@@ -21,6 +21,8 @@ import pageTile from './page/pageTile'
 import navBar from './nav/navBar'
 import navMenu from './nav/navMenu'
 import navItem from './nav/navItem'
+import tiles from './tiles'
+
 
 
 export const schemaTypes = [
@@ -47,4 +49,5 @@ export const schemaTypes = [
   navBar,
   navMenu,
   navItem,
+  tiles,
 ]

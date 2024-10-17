@@ -20,10 +20,12 @@ export const myStructure = (S) =>
               S.listItem()
                 .title(`Landing Video`)
                 .child(S.document().schemaType('video').documentId('video')),
+              // S.listItem()
+              //   .title(`Tile Images`)
+              //   .child(S.document().schemaType('tileImages').documentId('tileImages')),
               S.listItem()
                 .title(`Tile Images`)
-                .child(S.document().schemaType('tileImages').documentId('tileImages')),
-
+                .child(S.document().schemaType('tiles').documentId('195d9080-c2e2-409d-9f0e-838daa153372')),
               S.listItem()
                 .title(`Students' Welcome`)
                 .child(S.document().schemaType('studentWelcome').documentId('studentWelcome')),

@@ -8,6 +8,8 @@ export default defineType({
     defineField({
       name: 'title',
       title: 'Title',
+      hidden: true,
+      readOnly: true,
       type: 'string',
     }),
     defineField({

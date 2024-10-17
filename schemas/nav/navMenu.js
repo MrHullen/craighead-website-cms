@@ -29,8 +29,7 @@ export default defineType({
       title: 'Dropdown',
       description: 'The links displayed in this drop down.',
       type: 'array',
-      of: [{type: 'navItem'}],
-      validation: (Rule) => Rule.required(),
+      of: [{type: 'navItem'}]
     }),
   ],
 })

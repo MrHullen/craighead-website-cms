@@ -6,8 +6,8 @@ export default {
     {
       name: 'title',
       type: 'string',
-      // hidden: true,
-      // readOnly: true,
+      hidden: true,
+      readOnly: true,
       initialValue: 'General',
     },
     {
