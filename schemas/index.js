@@ -22,6 +22,9 @@ import navBar from './nav/navBar'
 import navMenu from './nav/navMenu'
 import navItem from './nav/navItem'
 import tiles from './tiles'
+import ourPeople from './our-people/ourPeople'
+import peopleSection from './our-people/peopleSection'
+import personTile from './our-people/personTile'
 
 
 
@@ -50,4 +53,7 @@ export const schemaTypes = [
   navMenu,
   navItem,
   tiles,
+  ourPeople,
+  peopleSection,
+  personTile,
 ]

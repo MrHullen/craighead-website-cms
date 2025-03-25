@@ -131,6 +131,11 @@ export const myStructure = (S) =>
                 .child(S.document().schemaType('section').documentId('facilitiesHireSection')),
             ])
         ),
+        S.listItem()
+        .title('Our People')
+        .child(
+          S.documentTypeList('our-people').title('Our People')
+        ),
       S.listItem()
         .title('Pages')
         .child(
@@ -179,6 +184,9 @@ export const myStructure = (S) =>
             'navBar',
             'navMenu',
             'navItem',
+            'tiles',
+            'peopleSection',
+            'personTile',
           ].includes(listItem.getId())
       ),
     ])
